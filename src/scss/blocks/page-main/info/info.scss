@@ -1,0 +1,57 @@
+.info {
+  background: #F2F3F7;
+  &__content {
+    background-image: url('../../static/img/main-info.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    height: 535px;
+    align-items: flex-start;
+    @include md {
+      display: flex;
+      flex-direction: column;
+      max-height: 400px;
+    }
+  }
+  &__title {
+    max-width: 235px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #001424;
+    margin-bottom: 10px;
+    @include md {
+      order: 2;
+      font-size: 48px;
+      line-height: 52px;
+      max-width: 450px;
+      margin-bottom: 32px;
+    }
+  }
+  &__description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #001424;
+    margin-bottom: 20px;
+    max-width: 290px;
+    @include md {
+      max-width: 570px;
+      order: 1;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__btn {
+    order: 3;
+    @include md {
+      min-width: 284px;
+      min-height: 48px;
+      font-size: 21px;
+      line-height: 48px;
+    }
+  }
+}

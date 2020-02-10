@@ -1,0 +1,21 @@
+.arrow {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: #FFFFFF;
+  border: 1px solid #E2E5EB;
+  border-radius: 16px;
+  margin: 0 0 0 10px;
+  &:hover {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+    border: none;
+    transition: all .2s linear;
+  }
+}
+
+.arrow-next {
+  transform: rotate(180deg);
+}

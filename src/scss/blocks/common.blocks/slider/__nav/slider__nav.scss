@@ -1,0 +1,11 @@
+.slider__nav {
+  display: flex;
+  @include md {
+    justify-content: flex-end;
+  }
+  &-arrows {
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.trademark {
+  background: #ffffff;
+  padding: 9px 16px;
+  @include md {
+    background: #ADB0B3;
+    max-width: 768px;
+    padding: 30px 0 40px 16px;
+    margin: 0 auto;
+  }
+  @include lg {
+    max-width: 992px;
+  }
+  @include xl {
+    max-width: 1200px;
+  }
+  &__title {
+    font-size: 12px;
+    line-height: 16px;
+    color: #6E7782;
+    @include md {
+      color: #fff;
+      font-weight: normal;
+    }
+  }
+}

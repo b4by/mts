@@ -1,0 +1,54 @@
+@import './business-item/business-item.scss';
+
+.business {
+  @include md {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  @include lg {
+    max-width: 992px;
+  }
+  @include xl {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+  &__header {
+    padding: 9px 16px;
+    @include xl {
+      padding-top: 40px;
+      max-width: 190px;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    @include xl {
+      margin-top: 0;
+    }
+  }
+  &__description {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+  &__wrapper {
+    @include md {
+      display: flex;
+    }
+    @include xl {
+      padding-top: 40px;
+    }
+  }
+  &__list {
+    flex: 1 1 auto;
+    @include md {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import './__dropdown/dropdown.scss';
+@import './__toogle/toggle.scss';
+
+.business-item {
+  color: #fff;
+  cursor: pointer;
+  @include md {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  &__toggle {
+    padding: 9px 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    @include md {
+      height: auto;
+    }
+    &-title {
+      position: relative;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: normal;
+      color: inherit;
+      transition: color .1s ease-in-out, background .3s ease-in-out;
+      @include md {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &-arrow {
+      fill: #fff;
+      transition: transform 0.3s ease-in-out;
+      @include md {
+        display: none;
+      }
+    }
+  }
+}

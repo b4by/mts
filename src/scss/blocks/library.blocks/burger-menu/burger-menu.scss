@@ -1,0 +1,45 @@
+.burger-menu {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.burger-menu span,
+.burger-menu span::after,
+.burger-menu span::before {
+  position: absolute;
+  top: 50%; margin-top: -1px;
+  left: 50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background: #B0B7BF;
+  border-radius: 1px;
+}
+
+.burger-menu span::after,
+.burger-menu span::before {
+  content: '';
+}
+
+.burger-menu span::before {
+  transform: translateY(-5px);
+}
+
+.burger-menu span::after {
+  transform: translateY(5px);
+}
+
+// burger-menu toggle
+
+.burger-menu.burger-menu--active span {
+  background: #fff;
+}
+
+.burger-menu.burger-menu--active span::before {
+  transform: rotate(-45deg);
+}
+
+.burger-menu.burger-menu--active span::after {
+  transform: rotate(45deg);
+}

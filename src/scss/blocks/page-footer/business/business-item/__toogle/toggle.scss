@@ -1,0 +1,14 @@
+.toggle--active {
+  color: #adb0b3 !important;
+  background: #fff;
+  transition: color .1s ease-in-out, background .3s ease-in-out;
+  > .dropdown {
+    max-height: 224px;
+    transition: max-height .3s ease-in-out;
+  }
+  .business-item__toggle-arrow {
+    fill: #adb0b3;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+}

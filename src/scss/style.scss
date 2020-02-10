@@ -1,0 +1,47 @@
+@import 'mixins';
+@import 'media';
+@import 'fonts';
+@import 'variables';
+
+// Base
+@import './base/base';
+
+// owl-carousel styles
+@import './owl-carousel';
+
+@import './blocks/common.blocks/slider/slider.scss';
+
+@import './blocks/page-header/page-header.scss';
+@import './blocks/page-main/page-main.scss';
+@import './blocks/page-footer/page-footer.scss';
+
+
+// library.blocks
+@import './blocks/library.blocks/mts-logo/mts-logo.scss';
+@import './blocks/library.blocks/user-icon/user-icon.scss';
+@import './blocks/library.blocks/burger-menu/burger-menu.scss';
+@import './blocks/library.blocks/btn/btn.scss';
+@import './blocks/library.blocks/arrow/arrow.scss';
+
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'MTS Sans', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  max-width: 768px;
+  @include lg {
+    max-width: 992px;
+  }
+  @include xl {
+    max-width: 1200px;
+  }
+}

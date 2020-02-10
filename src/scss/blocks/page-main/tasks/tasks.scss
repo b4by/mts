@@ -1,0 +1,60 @@
+.tasks {
+  &__title {
+    max-width: 200px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #001424;
+    margin-bottom: 30px;
+    @include md {
+      max-width: 100%;
+      text-align: center;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  &__list {
+    list-style: none;
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    @include lg {
+      justify-content: center;
+    }
+  }
+  &__item {
+    padding: 7px 20px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    color: #6E7782;
+    background: #FFFFFF;
+    border: 1px solid #E2E5EB;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+    @include md {
+      margin: 0 12px 12px 0;
+    }
+    &:last-child {
+      margin: 0;
+      @include md {
+        margin: 0 12px 12px 0;
+      }
+    }
+    &:hover {
+      background: #C90000;
+      color: #fff;
+    }
+    &--active {
+      background: #C90000;
+      color: #fff;
+    }
+  }
+}

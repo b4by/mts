@@ -1,0 +1,45 @@
+@import './purchase-item/purchase-item.scss';
+
+.purchase {
+  &__title {
+    margin: 0 0 30px 0;
+    padding: 0;
+    max-width: 288px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #001424;
+    @include md {
+      max-width: 490px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+  &__content {
+    display: flex;
+  }
+  &__list {
+    width: 100%;
+  }
+  &__bg {
+    display: none;
+    @include md {
+      display: block;
+      width: 100%;
+      margin-top: -60px;
+      background: url('../../static/img/main-purchase.png') no-repeat right;
+      background-size: contain;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    @include md {
+      margin-left: 38px;
+      justify-content: flex-start;
+    }
+  }
+}

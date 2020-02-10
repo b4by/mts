@@ -1,0 +1,14 @@
+.user-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: #BBC1C7;
+  border-radius: 50%;
+  cursor: pointer;
+  &__image {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

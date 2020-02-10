@@ -1,0 +1,32 @@
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  transition: all .5s linear;
+  &__item {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: middle;
+    line-height: 56px;
+    height: 56px;
+    padding: 9px 16px;
+    border-top: 1px solid #B0B7BF;
+    &:last-child {
+      border-bottom: 1px solid #B0B7BF;
+    }
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    color: #001424;
+    user-select: none;
+    &:hover {
+      color: #C90000;
+    }
+  }
+  &--active {
+    display: block;
+    transition: all .5s linear;
+  }
+}

@@ -1,0 +1,86 @@
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 30px 20px;
+  background: #FFFFFF;
+  border: 1px solid #E2E5EB;
+  border-radius: 8px;
+  transition: box-shadow .2s linear, border .2s linear;
+  @include md {
+    &:hover {
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+      border-color: transparent;
+      transition: box-shadow .2s linear;
+    }
+  }
+  &:hover &-btn {
+    background: #C90000;
+    color: #fff;
+  }
+  &-content {
+    overflow: hidden;
+    height: 275px;
+  }
+  &-image {
+    width: 72px !important;
+  }
+  &-title {
+    margin: 20px 0;
+    max-width: 190px;
+    min-height: 65px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: #001424;
+  }
+  &-description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202D3D; 
+  }
+  &-special {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    height: 44px;
+    margin-bottom: 20px;
+    &-digit {
+      vertical-align: middle;
+      font-size: 45px;
+      line-height: 24px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      color: #333333;
+      margin-right: 8px;
+    }
+    &-text {
+      width: 158px;
+      font-size: 21px;
+      line-height: 22px;
+      font-weight: 400; 
+      color: #333333;
+    }
+    &-single {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 600;
+      color: #333333;
+    }
+  }
+  &-btn {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 0 32px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 36px;
+    text-decoration: none;
+    background: #E2E5EB;
+    border-radius: 5px;
+    text-align: center;
+    color: #001424;
+  }
+}

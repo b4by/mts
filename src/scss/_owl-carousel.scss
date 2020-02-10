@@ -1,0 +1,77 @@
+.owl-stage {
+  display: flex;
+  padding-left: 0 !important;
+  margin-bottom: 20px;
+  @include md {
+    padding: 1em;
+  }
+}
+
+.owl-item {
+  display: flex;
+  flex: 1;
+}
+
+// custom owl nav arrows appereance
+
+.owl-nav {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 36px;
+  padding: 4px 5px 5px !important;
+  border: 1px solid #E2E5EB;
+  border-radius: 16px;
+  margin: 0 0 0 10px;
+  background: #ffffff;
+  &:hover {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid #fff;
+  }
+ } 
+
+ .owl-prev.disabled, .owl-next.disabled {
+  cursor: default !important;
+  svg {
+   fill: #BBC1C7;
+  }
+ }
+
+
+ // custom owl dots appereance
+
+.owl-dots {
+  @include md {
+    text-align: center;
+  }
+  @include lg {
+    text-align: center;
+  }
+  @include xl {
+    text-align: center;
+  }
+}
+
+.owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+  &:hover {
+    background: #869791;
+  }
+}
+
+.owl-dot.active span {
+  background: #E30611;
+}

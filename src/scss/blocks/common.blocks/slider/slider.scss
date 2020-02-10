@@ -1,0 +1,8 @@
+@import './__item/slider__item.scss';
+@import './__nav/slider__nav.scss';
+
+.slider {
+  &__nav {
+    position:relative;
+  }
+}
